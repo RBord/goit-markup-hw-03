@@ -1,0 +1,205 @@
+/* Цвет выделенного текста  #2196F3; */
+/* Цвет h2 h3 #212121;*/
+/* Цвет адреса и основного текста  #757575; */
+/* Цвет h1 и бэкграунда основного  #FFFFFF; */
+/* Цвет бэкграунда вторичного #2F303A;
+   Цвет бэкграунда кнопки Портфолио #F5F4FA; */
+
+/* Основные стили документа */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-background-color: #FFFFFF;
+    --secondary-background-color: #2F303A;
+    --primary-bcg-clr-btn: #F5F4FA;
+
+    --main-font: Roboto;
+    --secondary-font: Raleway;
+}
+
+body {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color)
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Стили Шапки */
+.main-nav .nav-logo {
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.main-nav .nav-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    text-decoration: none;
+
+}
+.main-nav .nav-link:hover, 
+.main-nav .nav-link:focus,
+.main-nav .nav-link.current {
+    color: var(--accent-color);
+}
+
+.link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+.link:hover, 
+.link:focus  {
+    color: var(--accent-color);
+}
+.adress-nav {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+
+/* Стиль Героя */
+.hero {
+    background-color: var(--secondary-background-color) ;
+}
+.hero > .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--primary-background-color)
+}
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    background-color:#2196F3;
+    color:#FFFFFF; 
+    text-decoration: none;
+}
+/* Стиль Особенностей */
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+}
+
+.features-list .item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+/* Стиль Команды */
+
+.team .item-title {
+    font-weight: 500; 
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
+
+.team .item-text {
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+}
+
+/* Стиль Подвала */
+
+.footer {
+    background-color:var(--secondary-background-color) ;
+}
+.footer > .link-logo {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color:var(--primary-background-color);
+    text-decoration: none;
+}
+.footer > .footer-nav {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color:var(--primary-background-color);
+    text-decoration: none;
+}
+footer .link {
+    color: rgba(255, 255, 255, 0.6);
+}
+/* через тег, учитывая спецификацию 0,1,1, 
+   чтобы не крыть спецу что выше для линк.ховер и фокус */
+
+/* СТИЛЬ ВТОРОЙ СТРАНИЦЫ ПОРТФОЛИО */
+
+.item-button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.625;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color:var(--title-text-color);
+}
+
+.item-button:hover,
+.item-button:focus  {
+color: var(--primary-background-color);
+background-color:var(--accent-color);
+cursor:pointer;
+}
+
+.portfolio .bot-list-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:var(--title-text-color);
+}
+.bot-list-text {
+    font-size: 16px;
+    line-height: 1.875;
+}
