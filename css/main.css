@@ -30,6 +30,13 @@ body {
 
 ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
 }
 
 /* Стили Шапки */
@@ -81,18 +88,29 @@ ul {
 /* Стиль Героя */
 .hero {
     background-color: var(--secondary-background-color) ;
+    text-align: center;
 }
-.hero > .hero-title {
+.hero-title {
+    margin-top: 0;
+    padding-top: 200px;
+    width: 696px;
+    margin:0 auto;
+    
     font-weight: 900;
     font-size: 44px;
     line-height: 1.364;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
     color: var(--primary-background-color)
 }
+
 .hero-button {
+    margin-top: 20px;
+    margin-bottom: 200px;
+    padding: 10px 32px;
+    
+    min-width: 200px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.875;
@@ -122,6 +140,9 @@ ul {
 }
 
 .features-list .item-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.143;
@@ -129,9 +150,38 @@ ul {
     color: var(--title-text-color);
 }
 
+.features-list-item .item-title:first-child {
+    padding-top: 94px;
+}
+.features-list .item-text {
+    margin: 0;
+    padding: 0;
+}
+
+/* OUR WORKS */
+
+.works.title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
+
+
 /* Стиль Команды */
+.team {
+    background-color:var(--primary-bcg-clr-btn);
+}
+
+.team.title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 94px;
+}
 
 .team .item-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+
     font-weight: 500; 
     font-size: 16px;
     line-height: 1.187;
@@ -140,6 +190,8 @@ ul {
 }
 
 .team .item-text {
+    margin-top: 10px;
+    margin-bottom: 0;
     font-size: 16px;
     line-height: 1.187;
     letter-spacing: 0.03em;
@@ -150,7 +202,14 @@ ul {
 .footer {
     background-color:var(--secondary-background-color) ;
 }
-.footer > .link-logo {
+.footer > .container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer a.link-logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
@@ -159,7 +218,7 @@ ul {
     color:var(--primary-background-color);
     text-decoration: none;
 }
-.footer > .footer-nav {
+.footer address.footer-nav {
     font-style: normal;
     font-size: 14px;
     line-height: 1.714;
