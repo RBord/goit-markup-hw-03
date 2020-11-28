@@ -297,6 +297,11 @@ margin-right: 30px;
     color:var(--primary-background-color);
     text-decoration: none;
 }
+.footer-nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
 .footer-nav-wrapper > .link {
     display: inline-block;
     margin-top: 9px;
