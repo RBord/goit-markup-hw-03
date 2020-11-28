@@ -38,6 +38,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+header {
+    border-bottom: 1px solid #ECECEC;
+}
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -121,11 +124,14 @@ ul {
 .hero {
     background-color: var(--secondary-background-color) ;
     text-align: center;
+    display: flex;
+    margin: 0 auto;
 }
 .hero-title {
+
     margin-top: 0;
     padding-top: 200px;
-    width: 696px;
+    max-width: 696px;
     margin:0 auto;
     
     font-weight: 900;
@@ -138,6 +144,8 @@ ul {
 }
 
 .hero-button {
+    display: block;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 200px;
     padding: 10px 32px;
