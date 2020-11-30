@@ -126,11 +126,12 @@ header {
     text-align: center;
     display: flex;
     margin: 0 auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
 
     margin-top: 0;
-    padding-top: 200px;
     max-width: 696px;
     margin:0 auto;
     
@@ -147,7 +148,6 @@ header {
     display: block;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 200px;
     padding: 10px 32px;
     
     min-width: 200px;
@@ -178,7 +178,7 @@ header {
     position: absolute;
     clip: rect(0 0 0 0);
 }
-.features > .container {
+.features {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -211,28 +211,27 @@ header {
 
 /* OUR WORKS */
 
-
+.ourworks {
+    padding-bottom: 94px;
+}
 .works-list {
     display: flex;
     padding-top: 50px;
-    padding-bottom: 94px;
 }
 .works-list-item:not(:last-child) {
 margin-right: 30px;
 }
 
 /* Стиль Команды */
-.team {
+.ourteam {
     background-color:var(--primary-bcg-clr-btn);
-}
-.team > .container {
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
 .team.title {
     margin-top: 0;
     margin-bottom: 50px;
-    padding-top: 94px;
 }
 .team-list {
     display: flex;
@@ -249,7 +248,7 @@ margin-right: 30px;
 .team-list-item:not(:last-child){
     margin-right: 30px;
 }
-.team .item-title {
+.ourteam .item-title {
     margin-top: 30px;
     margin-bottom: 0;
 
@@ -260,7 +259,7 @@ margin-right: 30px;
     color: var(--title-text-color);
 }
 
-.team .item-text {
+.ourteam .item-text {
     margin-top: 10px;
     margin-bottom: 0;
     font-size: 16px;
@@ -272,11 +271,10 @@ margin-right: 30px;
 
 .footer {
     background-color:var(--secondary-background-color) ;
-}
-.footer > .container {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+
 .footer a.link-logo {
     display: inline-block;
     margin-bottom: 20px;
@@ -313,16 +311,22 @@ footer .link {
    чтобы не крыть спецу что выше для линк.ховер и фокус */
 
 /* СТИЛЬ ВТОРОЙ СТРАНИЦЫ ПОРТФОЛИО */
+.pottfolio__content {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .pottfolio__top-list{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 .pottfolio__top-list .list-item:not(:last-child) {
 margin-right: 8px;
 }
 .item-button {
+    padding: 6px 12px;
+
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
@@ -338,9 +342,7 @@ color: var(--primary-background-color);
 background-color:var(--accent-color);
 cursor:pointer;
 }
-.portfolio .container {
-    padding-bottom: 94px;
-}
+
 .pottfolio__bot-list {
     display: flex;
     flex-wrap: wrap;
@@ -367,6 +369,11 @@ cursor:pointer;
     color:var(--title-text-color);
 }
 .bot-list-text {
+    margin-top: 4px;
+
     font-size: 16px;
     line-height: 1.875;
+}
+.list-item-underimg {
+    padding: 20px 24px;
 }
