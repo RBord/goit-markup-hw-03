@@ -134,6 +134,7 @@ header {
     margin-top: 0;
     max-width: 696px;
     margin:0 auto;
+    margin-bottom: 20px;
     
     font-weight: 900;
     font-size: 44px;
@@ -147,7 +148,6 @@ header {
 .hero-button {
     display: block;
     margin: 0 auto;
-    margin-top: 20px;
     padding: 10px 32px;
     
     min-width: 200px;
@@ -214,9 +214,11 @@ header {
 .ourworks {
     padding-bottom: 94px;
 }
+.works.title {
+    margin-bottom: 50px;
+}
 .works-list {
     display: flex;
-    padding-top: 50px;
 }
 .works-list-item:not(:last-child) {
 margin-right: 30px;
@@ -248,9 +250,11 @@ margin-right: 30px;
 .team-list-item:not(:last-child){
     margin-right: 30px;
 }
+.ourteam .item-photo {
+    margin-bottom: 30px;
+}
 .ourteam .item-title {
-    margin-top: 30px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
 
     font-weight: 500; 
     font-size: 16px;
@@ -260,7 +264,6 @@ margin-right: 30px;
 }
 
 .ourteam .item-text {
-    margin-top: 10px;
     margin-bottom: 0;
     font-size: 16px;
     line-height: 1.187;
@@ -319,7 +322,7 @@ footer .link {
 .pottfolio__top-list{
     display: flex;
     justify-content: center;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 .pottfolio__top-list .list-item:not(:last-child) {
 margin-right: 8px;
@@ -362,6 +365,8 @@ cursor:pointer;
     outline: 1px solid #EEEEEE
 }
 .portfolio .bot-list-title {
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -369,8 +374,6 @@ cursor:pointer;
     color:var(--title-text-color);
 }
 .bot-list-text {
-    margin-top: 4px;
-
     font-size: 16px;
     line-height: 1.875;
 }
